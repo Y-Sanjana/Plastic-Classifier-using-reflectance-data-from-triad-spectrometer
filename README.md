@@ -1,10 +1,10 @@
 # Plastic Classifier
 
-This project is a plastic classifier that uses sensor data to identify types of plastic materials. It consists of two main components: a data collection script that reads sensor data from an Arduino device, and a Streamlit web application that allows users to upload sensor data in CSV format and predicts the plastic type using machine learning models.
+This project is a plastic classifier that uses triad spectroscopy sensor (AS7265X) data to identify types of plastic materials namely PET,PP,HDPE,LDPE. It consists of two main components: a data collection script that reads sensor data from an Arduino device, and a Streamlit web application that allows users to upload sensor data in CSV format and predicts the plastic type using machine learning models.
 
 ## Features
 
-- Collect sensor data from an Arduino via serial communication.
+- Collect sensor data from an Arduino nano / uno via serial communication.
 - Upload sensor data CSV files through a user-friendly Streamlit interface.
 - Predict plastic type using two machine learning models: Random Forest and Support Vector Machine (SVM).
 - Visualize the reflectance spectrum of the plastic sample.
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-### 1. Collect Sensor Data
+### 1. Collect  Sensor Data
 
 Connect your Arduino device to the appropriate serial port (default is `COM3` in `save_sensor_reading.py`). Run the script to read sensor data and save it to a CSV file:
 
@@ -110,4 +110,4 @@ This project is provided as-is without any warranty. Feel free to modify and use
 
 ## Author
 
-[Your Name or Organization]
+Y SANJANA
